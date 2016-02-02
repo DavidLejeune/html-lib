@@ -5,7 +5,7 @@
     <title>Demo HTML-lib</title>
   </head>
   <body>
-    <h1>Demo HTML-lib</h1>
+    <h1>HTML-lib</h1>
     <p>
       foo
     </p>
