@@ -6,5 +6,8 @@
   </head>
   <body>
     <h1>Demo HTML-lib</h1>
+    <p>
+      Welcome to my HTML-lib
+    </p>
   </body>
 </html>
