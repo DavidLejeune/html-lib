@@ -4,10 +4,12 @@ class Element
 {
     protected $content = '';
     protected $tag = '';
+    protected $properties = array();
 
-    public function __construct($content)
+    public function __construct($content , $properties = array())
     {
         $this->content = $content;
+        $this->properties = $properties;
 
     }
 
@@ -17,7 +19,12 @@ class Element
         {
             throw new Exception('Element tag is empty');
         }
-        return "<$this->tag>$this->content</$this->tag>";
+        $properties = '';
+        foreach($this->properties as $key => $value)
+        {
+            $properties .= "$key=\"$value\" ";
+        }       
+        return "<$this->tag $properties>$this->content</$this->tag>";
     }
 
 
